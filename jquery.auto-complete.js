@@ -40,7 +40,7 @@
                 that.sc.css({
                     top: that.offset().top + that.outerHeight(),
                     left: that.offset().left,
-                    width: that.outerWidth()
+                    width: o.width || that.outerWidth()		// Allows the user to pass a "width" value in options
                 });
                 if (!resize) {
                     that.sc.show();
